@@ -1,0 +1,6 @@
+deepface==0.0.75
+deta==1.1.0
+fastapi==0.87.0
+numpy==1.23.2
+pandas==1.4.1
+pydantic==1.9.2
