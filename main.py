@@ -1,5 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form, BackgroundTasks, Depends, Path
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 import random
 import os
 import string
@@ -257,3 +258,8 @@ def faceRecognition(upload_file: UploadFile = File()):
             output["all result"] = result.to_dict("list")
 
     return output
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=8080)

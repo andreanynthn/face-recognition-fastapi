@@ -4,3 +4,7 @@ fastapi==0.87.0
 numpy==1.23.2
 pandas==1.4.1
 pydantic==1.9.2
+uvicorn==0.20.0
+python-dotenv
+python-multipart
+opencv-contrib-python
